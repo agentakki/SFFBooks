@@ -1,0 +1,86 @@
+﻿<phone:PhoneApplicationPage 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+	x:Class="SFFGuide.theLeftHandOfDarkness"
+	FontFamily="{StaticResource PhoneFontFamilyNormal}"
+	FontSize="{StaticResource PhoneFontSizeNormal}"
+	Foreground="{StaticResource PhoneForegroundBrush}"
+	Orientation="Portrait"
+	shell:SystemTray.IsVisible="True">
+
+	<!--LayoutRoot is the root grid where all page content is placed-->
+	<Grid x:Name="LayoutRoot" Background="Transparent">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		
+	<!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="GUIDE TO SCIENCE FICTION &amp; FANTASY BOOKS" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="your book" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.476*"/>
+                <ColumnDefinition Width="0.524*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="summaryTitleTextBlock" 
+                       Margin="7,-19,0,0"
+                       TextWrapping="Wrap" 
+                       Text="Summary: " 
+                       VerticalAlignment="Top"
+                       RenderTransformOrigin="0.55,1.555" Grid.Column="1" 
+                       FontWeight="Bold"
+                       Height="27" 
+                       HorizontalAlignment="Left"
+                       Width="102"/>
+
+            <ScrollViewer Margin="0,8,0,12" Grid.Column="1" HorizontalAlignment="Right" Width="244">
+                <TextBlock x:Name="summaryTextBlock"
+                           TextWrapping="Wrap"
+                            
+                           Width="220" Text="A groundbreaking work of science fiction, The Left Hand of Darkness tells the story of a lone human emissary to Winter, an alien world whose inhabitants can change their gender. His goal is to facilitate Winter's inclusion in a growing intergalactic civilization. But to do so he must bridge the gulf between his own views and those of the completely dissimilar culture that he encounters. Embracing the aspects of psychology, society, and human emotion on an alien world, The Left Hand of Darkness stands as a landmark achievement in the annals of intellectual science fiction."/>
+            </ScrollViewer>
+
+            <Image Height="302" 
+                   Source="/sciFiBooks/Images/theLeftHandOfDarkness.jpg" 
+                   HorizontalAlignment="Left" 
+                   Margin="12,-19,0,0" 
+                   x:Name="image1" 
+                   Stretch="Fill" 
+                   VerticalAlignment="Top" 
+                   Width="200" />
+
+            <TextBlock x:Name="titleTextBlock" 
+                       Margin="8,0,9,233" 
+                       TextWrapping="Wrap" 
+                       Height="83"
+                       VerticalAlignment="Bottom" Text="The Left Hand Of Darkness" FontSize="32"/>
+
+            <TextBlock Margin="8,0,5,198" 
+                       TextWrapping="Wrap" 
+                       Text="by Ursula K. Le Guin" 
+                       VerticalAlignment="Bottom" 
+                       Height="31"
+                       FontSize="18.667" 
+                       x:Name="authorTextBlock" />
+
+            <Button x:Name="startOverButton" 
+                    Content="Start Over" 
+                    Margin="0,0,5,12" 
+                    VerticalAlignment="Bottom" Click="startOverButton_Click">
+
+
+            </Button>
+        </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>

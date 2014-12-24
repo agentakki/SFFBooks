@@ -1,0 +1,86 @@
+﻿<phone:PhoneApplicationPage 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+	x:Class="SFFGuide.fahrenheit451"
+	FontFamily="{StaticResource PhoneFontFamilyNormal}"
+	FontSize="{StaticResource PhoneFontSizeNormal}"
+	Foreground="{StaticResource PhoneForegroundBrush}"
+	Orientation="Portrait"
+	shell:SystemTray.IsVisible="True">
+
+	<!--LayoutRoot is the root grid where all page content is placed-->
+	<Grid x:Name="LayoutRoot" Background="Transparent">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		
+	<!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="GUIDE TO SCIENCE FICTION &amp; FANTASY BOOKS" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="alternative" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.476*"/>
+                <ColumnDefinition Width="0.524*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="summaryTitleTextBlock" 
+                       Margin="7,-19,0,0"
+                       TextWrapping="Wrap" 
+                       Text="Summary: " 
+                       VerticalAlignment="Top"
+                       RenderTransformOrigin="0.55,1.555" Grid.Column="1" 
+                       FontWeight="Bold"
+                       Height="27" 
+                       HorizontalAlignment="Left"
+                       Width="102"/>
+
+            <ScrollViewer Margin="0,8,0,12" Grid.Column="1" HorizontalAlignment="Right" Width="244">
+                <TextBlock x:Name="summaryTextBlock"
+                           TextWrapping="Wrap"
+                            
+                           Width="220"><Run Text="Internationally acclaimed with more than 5 million copies in print, Fahrenheit 451 is Ray Bradbury's classic novel of censorship and defiance, as resonant today as it was when it was first published nearly 50 years ago."/><LineBreak/><Run Text="Guy Montag was a fireman whose job it was to start fires..."/><LineBreak/><Run/><LineBreak/><Run Text="The system was simple. Everyone understood it. Books were for burning ... along with the houses in which they were hidden."/><LineBreak/><Run/><LineBreak/><Run Text="Guy Montag enjoyed his job. He had been a fireman for ten years, and he had never questioned the pleasure of the midnight runs nor the joy of watching pages consumed by flames... never questioned anything until he met a seventeen-year-old girl who told him of a past when people were not afraid."/><LineBreak/><Run/><LineBreak/><Run Text="Then he met a professor who told him of a future in which people could think... and Guy Montag suddenly realized what he had to do!"/><LineBreak/><Run/><LineBreak/><Run Text="First published in 1953, Fahrenheit 451 is a classic novel set in the future when books forbidden by a totalitarian regime are burned. The hero, a book burner, suddenly discovers that books are flesh and blood ideas that cry out silently when put to the torch."/></TextBlock>
+            </ScrollViewer>
+
+            <Image Height="302" 
+                   Source="/alternativeBooks/Images/fahrenheit451.jpg" 
+                   HorizontalAlignment="Left" 
+                   Margin="12,-19,0,0" 
+                   x:Name="image1" 
+                   Stretch="Fill" 
+                   VerticalAlignment="Top" 
+                   Width="200" />
+
+            <TextBlock x:Name="titleTextBlock" 
+                       Margin="8,0,9,231" 
+                       TextWrapping="Wrap" 
+                       Height="85"
+                       VerticalAlignment="Bottom"><Run FontSize="32" Text="Fahrenheit 451"/></TextBlock>
+
+            <TextBlock Margin="8,0,5,202" 
+                       TextWrapping="Wrap" 
+                       Text="by Ray Bradbury" 
+                       VerticalAlignment="Bottom" 
+                       Height="25"
+                       FontSize="18.667" 
+                       x:Name="authorTextBlock" />
+
+            <Button x:Name="startOverButton" 
+                    Content="Start Over" 
+                    Margin="0,0,5,12" 
+                    VerticalAlignment="Bottom" Click="startOverButton_Click">
+
+
+            </Button>
+        </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>

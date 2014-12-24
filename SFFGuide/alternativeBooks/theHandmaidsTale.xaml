@@ -1,0 +1,86 @@
+﻿<phone:PhoneApplicationPage 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+	x:Class="SFFGuide.theHandmaidsTale"
+	FontFamily="{StaticResource PhoneFontFamilyNormal}"
+	FontSize="{StaticResource PhoneFontSizeNormal}"
+	Foreground="{StaticResource PhoneForegroundBrush}"
+	Orientation="Portrait"
+	shell:SystemTray.IsVisible="True">
+
+	<!--LayoutRoot is the root grid where all page content is placed-->
+	<Grid x:Name="LayoutRoot" Background="Transparent">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		
+		<!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="GUIDE TO SCIENCE FICTION &amp; FANTASY BOOKS" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="alternative" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.476*"/>
+                <ColumnDefinition Width="0.524*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="summaryTitleTextBlock" 
+                       Margin="7,-19,0,0"
+                       TextWrapping="Wrap" 
+                       Text="Summary: " 
+                       VerticalAlignment="Top"
+                       RenderTransformOrigin="0.55,1.555" Grid.Column="1" 
+                       FontWeight="Bold"
+                       Height="27" 
+                       HorizontalAlignment="Left"
+                       Width="102"/>
+
+            <ScrollViewer Margin="0,8,0,12" Grid.Column="1" HorizontalAlignment="Right" Width="244">
+                <TextBlock x:Name="summaryTextBlock"
+                           TextWrapping="Wrap"
+                            
+                           Width="220"><Run Text="Offred is a Handmaid in the Republic of Gilead. She may leave the home of the Commander and his wife once a day to walk to food markets whose signs are now pictures instead of words because women are no longer allowed to read. She must lie on her back once a month and pray that the Commander makes her pregnant, because in an age of declining fertility, Offred and the other Handmaids are valued only if their ovaries are viable. Offred can remember the years before, when she lived and made love with her husband, Luke; when she played with and protected her daughter; when she had a job, money of her own, and access to knowledge. But all of that is gone now..."/><LineBreak/><Run Text="Funny, unexpected, horrifying, and altogether convincing, The Handmaid's Tale is at once scathing satire, dire warning, and tour de force."/></TextBlock>
+            </ScrollViewer>
+
+            <Image Height="302" 
+                   Source="/alternativeBooks/Images/theHandmaidsTale.jpg" 
+                   HorizontalAlignment="Left" 
+                   Margin="12,-19,0,0" 
+                   x:Name="image1" 
+                   Stretch="Fill" 
+                   VerticalAlignment="Top" 
+                   Width="200" />
+
+            <TextBlock x:Name="titleTextBlock" 
+                       Margin="8,0,9,231" 
+                       TextWrapping="Wrap" 
+                       Height="85"
+                       VerticalAlignment="Bottom" FontSize="28" Text="The Handmaid's Tale"/>
+
+            <TextBlock Margin="8,0,5,202" 
+                       TextWrapping="Wrap" 
+                       Text="by Margaret Atwood" 
+                       VerticalAlignment="Bottom" 
+                       Height="25"
+                       FontSize="18.667" 
+                       x:Name="authorTextBlock" />
+
+            <Button x:Name="startOverButton" 
+                    Content="Start Over" 
+                    Margin="0,0,5,12" 
+                    VerticalAlignment="Bottom" Click="startOverButton_Click">
+
+
+            </Button>
+        </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>

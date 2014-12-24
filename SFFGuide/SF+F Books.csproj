@@ -1,0 +1,1598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C26ACA32-9BDB-42F1-8403-4E8CBCDA8F76}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SFFGuide</RootNamespace>
+    <AssemblyName>SF+F Books</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>SFFGuide.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>SFFGuide.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Interactivity" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.xaml.cs">
+      <DependentUpon>about.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeBooks\1984.xaml.cs">
+      <DependentUpon>1984.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeBooks\aClockworkOrange.xaml.cs">
+      <DependentUpon>aClockworkOrange.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeBooks\animalFarm.xaml.cs">
+      <DependentUpon>animalFarm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeBooks\braveNewWorld.xaml.cs">
+      <DependentUpon>braveNewWorld.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeBooks\catsCradle.xaml.cs">
+      <DependentUpon>catsCradle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeBooks\fahrenheit451.xaml.cs">
+      <DependentUpon>fahrenheit451.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeBooks\flowersForAlgernon.xaml.cs">
+      <DependentUpon>flowersForAlgernon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeBooks\slaughterhouseFive.xaml.cs">
+      <DependentUpon>slaughterhouseFive.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeBooks\theHandmaidsTale.xaml.cs">
+      <DependentUpon>theHandmaidsTale.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeBooks\theOutlanderSeries.xaml.cs">
+      <DependentUpon>theOutlanderSeries.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeBooks\theRoad.xaml.cs">
+      <DependentUpon>theRoad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeBooks\theStand.xaml.cs">
+      <DependentUpon>theStand.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeBooks\theTimeTravelersWife.xaml.cs">
+      <DependentUpon>theTimeTravelersWife.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeQ\q1.xaml.cs">
+      <DependentUpon>q1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeQ\q1no.xaml.cs">
+      <DependentUpon>q1no.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeQ\q1noyes.xaml.cs">
+      <DependentUpon>q1noyes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeQ\q1yes.xaml.cs">
+      <DependentUpon>q1yes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeQ\q1yesromance.xaml.cs">
+      <DependentUpon>q1yesromance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeQ\q1yesRynCC.xaml.cs">
+      <DependentUpon>q1yesRynCC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeQ\q2.xaml.cs">
+      <DependentUpon>q2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeQ\q2yes.xaml.cs">
+      <DependentUpon>q2yes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeQ\q2yesdictators.xaml.cs">
+      <DependentUpon>q2yesdictators.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeQ\q2yesmadness.xaml.cs">
+      <DependentUpon>q2yesmadness.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeQ\q3.xaml.cs">
+      <DependentUpon>q3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="alternativeQ\q3neither.xaml.cs">
+      <DependentUpon>q3neither.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="bothSf+fBooks\anathem.xaml.cs">
+      <DependentUpon>anathem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="bothSf+fBooks\perdidoStreetStation.xaml.cs">
+      <DependentUpon>perdidoStreetStation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="bothSf+fBooks\theBookOfTheNewSun.xaml.cs">
+      <DependentUpon>theBookOfTheNewSun.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="bothSf+fBooks\theEyreAffair.xaml.cs">
+      <DependentUpon>theEyreAffair.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="bothSf+fBooks\theHyperionOmnibus.xaml.cs">
+      <DependentUpon>theHyperionOmnibus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="bothSf+fQ\future.xaml.cs">
+      <DependentUpon>future.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="bothSf+fQ\futureno.xaml.cs">
+      <DependentUpon>futureno.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="bothSf+fQ\past.xaml.cs">
+      <DependentUpon>past.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="bothSf+fQ\q1.xaml.cs">
+      <DependentUpon>q1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\americanGods.xaml.cs">
+      <DependentUpon>americanGods.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\aSongOfIceAndFire.xaml.cs">
+      <DependentUpon>aSongOfIceAndFire.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\conanTheBarbarianSeries.xaml.cs">
+      <DependentUpon>conanTheBarbarianSeries.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\dragonflight.xaml.cs">
+      <DependentUpon>dragonflight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\goingPostal.xaml.cs">
+      <DependentUpon>goingPostal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\jonathanStrangeMrNorrell.xaml.cs">
+      <DependentUpon>jonathanStrangeMrNorrell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\mistborn.xaml.cs">
+      <DependentUpon>mistborn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\neverwhere.xaml.cs">
+      <DependentUpon>neverwhere.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\smallGods.xaml.cs">
+      <DependentUpon>smallGods.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\somethingWickedThisWayComes.xaml.cs">
+      <DependentUpon>somethingWickedThisWayComes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\stardust.xaml.cs">
+      <DependentUpon>stardust.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theBelgariad.xaml.cs">
+      <DependentUpon>theBelgariad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theChroniclesOfAmber.xaml.cs">
+      <DependentUpon>theChroniclesOfAmber.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theChroniclesOfThomasCovenantTheUnbeliever.xaml.cs">
+      <DependentUpon>theChroniclesOfThomasCovenantTheUnbeliever.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theCodexAleraSeries.xaml.cs">
+      <DependentUpon>theCodexAleraSeries.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theCrystalCave.xaml.cs">
+      <DependentUpon>theCrystalCave.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theDarkTower.xaml.cs">
+      <DependentUpon>theDarkTower.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theElricSaga.xaml.cs">
+      <DependentUpon>theElricSaga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theFarseerTrilogy.xaml.cs">
+      <DependentUpon>theFarseerTrilogy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theKushielsLegacySeries.xaml.cs">
+      <DependentUpon>theKushielsLegacySeries.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\thelastUnicorn.xaml.cs">
+      <DependentUpon>thelastUnicorn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theLegendOfDrizztSeries.xaml.cs">
+      <DependentUpon>theLegendOfDrizztSeries.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theLordOfTheRings.xaml.cs">
+      <DependentUpon>theLordOfTheRings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theMalazanBookOfTheFallenSeries.xaml.cs">
+      <DependentUpon>theMalazanBookOfTheFallenSeries.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theMistsOfAvalon.xaml.cs">
+      <DependentUpon>theMistsOfAvalon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theNameOfTheWind.xaml.cs">
+      <DependentUpon>theNameOfTheWind.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theOnceAndFutureKing.xaml.cs">
+      <DependentUpon>theOnceAndFutureKing.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\thePrincessBride.xaml.cs">
+      <DependentUpon>thePrincessBride.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theRiftwarSaga.xaml.cs">
+      <DependentUpon>theRiftwarSaga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theSilmarillion.xaml.cs">
+      <DependentUpon>theSilmarillion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theSwordOfShannaraTrilogy.xaml.cs">
+      <DependentUpon>theSwordOfShannaraTrilogy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theSwordOfTruthSeries.xaml.cs">
+      <DependentUpon>theSwordOfTruthSeries.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theWayOfKings.xaml.cs">
+      <DependentUpon>theWayOfKings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theWheelOfTime.xaml.cs">
+      <DependentUpon>theWheelOfTime.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\theXanthSeries.xaml.cs">
+      <DependentUpon>theXanthSeries.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\watershipDown.xaml.cs">
+      <DependentUpon>watershipDown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyBooks\wicked.xaml.cs">
+      <DependentUpon>wicked.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q1.xaml.cs">
+      <DependentUpon>q1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q1no.xaml.cs">
+      <DependentUpon>q1no.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q1noyes.xaml.cs">
+      <DependentUpon>q1noyes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q2.xaml.cs">
+      <DependentUpon>q2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q2no.xaml.cs">
+      <DependentUpon>q2no.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q2noyes.xaml.cs">
+      <DependentUpon>q2noyes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q2yes.xaml.cs">
+      <DependentUpon>q2yes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q3.xaml.cs">
+      <DependentUpon>q3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q3no.xaml.cs">
+      <DependentUpon>q3no.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q3noyes.xaml.cs">
+      <DependentUpon>q3noyes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q4.xaml.cs">
+      <DependentUpon>q4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q4no.xaml.cs">
+      <DependentUpon>q4no.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q4nomaybe.xaml.cs">
+      <DependentUpon>q4nomaybe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q4nono.xaml.cs">
+      <DependentUpon>q4nono.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q4yes.xaml.cs">
+      <DependentUpon>q4yes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q5.xaml.cs">
+      <DependentUpon>q5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q5no.xaml.cs">
+      <DependentUpon>q5no.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q5yes.xaml.cs">
+      <DependentUpon>q5yes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q5yesno.xaml.cs">
+      <DependentUpon>q5yesno.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q5yesnoyes.xaml.cs">
+      <DependentUpon>q5yesnoyes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q5yesyes.xaml.cs">
+      <DependentUpon>q5yesyes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q5yesyesno.xaml.cs">
+      <DependentUpon>q5yesyesno.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q6.xaml.cs">
+      <DependentUpon>q6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q6no.xaml.cs">
+      <DependentUpon>q6no.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q6nono.xaml.cs">
+      <DependentUpon>q6nono.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q6noyes.xaml.cs">
+      <DependentUpon>q6noyes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q6yes.xaml.cs">
+      <DependentUpon>q6yes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="fantasyQ\q6yesyes.xaml.cs">
+      <DependentUpon>q6yesyes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="horrorBooks\frankenstein.xaml.cs">
+      <DependentUpon>frankenstein.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="horrorBooks\iAmLegend.xaml.cs">
+      <DependentUpon>iAmLegend.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="horrorBooks\sunshine.xaml.cs">
+      <DependentUpon>sunshine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="horrorBooks\worldWarZ.xaml.cs">
+      <DependentUpon>worldWarZ.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="horrorQ\q1no.xaml.cs">
+      <DependentUpon>q1no.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="horrorQ\q1.xaml.cs">
+      <DependentUpon>q1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pictureBooks\theSandmanSeries.xaml.cs">
+      <DependentUpon>theSandmanSeries.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pictureBooks\watchmen.xaml.cs">
+      <DependentUpon>watchmen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pictureQ\q1.xaml.cs">
+      <DependentUpon>q1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sciFiBooks\20000LeaguesUnderTheSea.xaml.cs">
+      <DependentUpon>20000LeaguesUnderTheSea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\2001ASpaceOdyssey.xaml.cs">
+      <DependentUpon>2001ASpaceOdyssey.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\aCanticleForLeibowitz.xaml.cs">
+      <DependentUpon>aCanticleForLeibowitz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\aFireUponTheDeep.xaml.cs">
+      <DependentUpon>aFireUponTheDeep.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\childhoodsEnd.xaml.cs">
+      <DependentUpon>childhoodsEnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\contact.xaml.cs">
+      <DependentUpon>contact.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\cryptonomicon.xaml.cs">
+      <DependentUpon>cryptonomicon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\doAndroidsDreamOfElectricSheep.xaml.cs">
+      <DependentUpon>doAndroidsDreamOfElectricSheep.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\doomsdayBook.xaml.cs">
+      <DependentUpon>doomsdayBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\endersGame.xaml.cs">
+      <DependentUpon>endersGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\iRobot.xaml.cs">
+      <DependentUpon>iRobot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\journeyToTheCenterOfTheEarth.xaml.cs">
+      <DependentUpon>journeyToTheCenterOfTheEarth.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\lucifersHammer.xaml.cs">
+      <DependentUpon>lucifersHammer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\neuromancer.xaml.cs">
+      <DependentUpon>neuromancer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\oldMansWar.xaml.cs">
+      <DependentUpon>oldMansWar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\rendezvousWithRama.xaml.cs">
+      <DependentUpon>rendezvousWithRama.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\ringworld.xaml.cs">
+      <DependentUpon>ringworld.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\snowCrash.xaml.cs">
+      <DependentUpon>snowCrash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\starshipTroopers.xaml.cs">
+      <DependentUpon>starshipTroopers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\strangerInAStrangeLand.xaml.cs">
+      <DependentUpon>strangerInAStrangeLand.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theCavesOfSteel.xaml.cs">
+      <DependentUpon>theCavesOfSteel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theCultureSeries.xaml.cs">
+      <DependentUpon>theCultureSeries.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theDiamondAge.xaml.cs">
+      <DependentUpon>theDiamondAge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theDispossessed.xaml.cs">
+      <DependentUpon>theDispossessed.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theDuneChronicles.xaml.cs">
+      <DependentUpon>theDuneChronicles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theForeverWar.xaml.cs">
+      <DependentUpon>theForeverWar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theFoundationTrilogy.xaml.cs">
+      <DependentUpon>theFoundationTrilogy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theHitchhikersGuideToTheGalaxy.xaml.cs">
+      <DependentUpon>theHitchhikersGuideToTheGalaxy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theIllustratedMan.xaml.cs">
+      <DependentUpon>theIllustratedMan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theLeftHandOfDarkness.xaml.cs">
+      <DependentUpon>theLeftHandOfDarkness.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theMarsTrilogy.xaml.cs">
+      <DependentUpon>theMarsTrilogy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theMartianChronicles.xaml.cs">
+      <DependentUpon>theMartianChronicles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theMoonIsAHarshMistress.xaml.cs">
+      <DependentUpon>theMoonIsAHarshMistress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theMoteInGodsEye.xaml.cs">
+      <DependentUpon>theMoteInGodsEye.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theSpaceTrilogy.xaml.cs">
+      <DependentUpon>theSpaceTrilogy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theThrawnTrilogy.xaml.cs">
+      <DependentUpon>theThrawnTrilogy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theTimeMachine.xaml.cs">
+      <DependentUpon>theTimeMachine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theVorkosiganSaga.xaml.cs">
+      <DependentUpon>theVorkosiganSaga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiBooks\theWarOfTheWorlds.xaml.cs">
+      <DependentUpon>theWarOfTheWorlds.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q1.xaml.cs">
+      <DependentUpon>q1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q1yes.xaml.cs">
+      <DependentUpon>q1yes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q2.xaml.cs">
+      <DependentUpon>q2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q2maybe.xaml.cs">
+      <DependentUpon>q2maybe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q2maybenear.xaml.cs">
+      <DependentUpon>q2maybenear.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q2no.xaml.cs">
+      <DependentUpon>q2no.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q2nono.xaml.cs">
+      <DependentUpon>q2nono.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q2nonogood.xaml.cs">
+      <DependentUpon>q2nonogood.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q2nononone.xaml.cs">
+      <DependentUpon>q2nononone.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q2nonononecomfort.xaml.cs">
+      <DependentUpon>q2nonononecomfort.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q2nonoread.xaml.cs">
+      <DependentUpon>q2nonoread.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q2noyes.xaml.cs">
+      <DependentUpon>q2noyes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q2yes.xaml.cs">
+      <DependentUpon>q2yes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q2yesno.xaml.cs">
+      <DependentUpon>q2yesno.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q2yesyes.xaml.cs">
+      <DependentUpon>q2yesyes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q3.xaml.cs">
+      <DependentUpon>q3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q3no.xaml.cs">
+      <DependentUpon>q3no.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q4.xaml.cs">
+      <DependentUpon>q4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q4no.xaml.cs">
+      <DependentUpon>q4no.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q4nono.xaml.cs">
+      <DependentUpon>q4nono.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sciFiQ\q4yes.xaml.cs">
+      <DependentUpon>q4yes.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="about.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="alternativeBooks\1984.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeBooks\aClockworkOrange.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeBooks\animalFarm.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeBooks\braveNewWorld.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeBooks\catsCradle.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeBooks\fahrenheit451.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeBooks\flowersForAlgernon.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeBooks\slaughterhouseFive.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeBooks\theHandmaidsTale.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeBooks\theOutlanderSeries.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeBooks\theRoad.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeBooks\theStand.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeBooks\theTimeTravelersWife.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeQ\q1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="alternativeQ\q1no.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="alternativeQ\q1noyes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeQ\q1yes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="alternativeQ\q1yesromance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="alternativeQ\q1yesRynCC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="alternativeQ\q2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="alternativeQ\q2yes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="alternativeQ\q2yesdictators.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="alternativeQ\q2yesmadness.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="alternativeQ\q3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="alternativeQ\q3neither.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="bothSf+fBooks\anathem.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="bothSf+fBooks\perdidoStreetStation.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="bothSf+fBooks\theBookOfTheNewSun.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="bothSf+fBooks\theEyreAffair.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="bothSf+fBooks\theHyperionOmnibus.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="bothSf+fQ\future.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="bothSf+fQ\futureno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="bothSf+fQ\past.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="bothSf+fQ\q1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyBooks\americanGods.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyBooks\aSongOfIceAndFire.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\conanTheBarbarianSeries.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyBooks\dragonflight.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\goingPostal.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\jonathanStrangeMrNorrell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyBooks\mistborn.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\neverwhere.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\smallGods.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\somethingWickedThisWayComes.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\stardust.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theBelgariad.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theChroniclesOfAmber.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theChroniclesOfThomasCovenantTheUnbeliever.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theCodexAleraSeries.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theCrystalCave.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theDarkTower.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theElricSaga.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theFarseerTrilogy.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theKushielsLegacySeries.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\thelastUnicorn.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theLegendOfDrizztSeries.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theLordOfTheRings.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theMalazanBookOfTheFallenSeries.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theMistsOfAvalon.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theNameOfTheWind.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyBooks\theOnceAndFutureKing.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\thePrincessBride.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theRiftwarSaga.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theSilmarillion.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theSwordOfShannaraTrilogy.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theSwordOfTruthSeries.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theWayOfKings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyBooks\theWheelOfTime.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\theXanthSeries.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\watershipDown.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="fantasyBooks\wicked.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q1no.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q1noyes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q2no.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q2noyes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q2yes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q3no.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q3noyes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q4no.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q4nomaybe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q4nono.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q4yes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q5no.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q5yes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q5yesno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q5yesnoyes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q5yesyes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q5yesyesno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q6no.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q6nono.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q6noyes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q6yes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="fantasyQ\q6yesyes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="horrorBooks\frankenstein.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="horrorBooks\iAmLegend.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="horrorBooks\sunshine.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="horrorBooks\worldWarZ.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="horrorQ\q1no.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="horrorQ\q1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pictureBooks\theSandmanSeries.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pictureBooks\watchmen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pictureQ\q1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiBooks\20000LeaguesUnderTheSea.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\2001ASpaceOdyssey.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\aCanticleForLeibowitz.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\aFireUponTheDeep.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\childhoodsEnd.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\contact.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\cryptonomicon.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\doAndroidsDreamOfElectricSheep.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\doomsdayBook.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\endersGame.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\iRobot.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\journeyToTheCenterOfTheEarth.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\lucifersHammer.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\neuromancer.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\oldMansWar.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\rendezvousWithRama.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\ringworld.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\snowCrash.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\starshipTroopers.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\strangerInAStrangeLand.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theCavesOfSteel.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theCultureSeries.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theDiamondAge.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theDispossessed.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theDuneChronicles.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theForeverWar.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theFoundationTrilogy.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theHitchhikersGuideToTheGalaxy.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theIllustratedMan.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theLeftHandOfDarkness.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theMarsTrilogy.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theMartianChronicles.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theMoonIsAHarshMistress.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theMoteInGodsEye.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theSpaceTrilogy.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theThrawnTrilogy.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theTimeMachine.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theVorkosiganSaga.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiBooks\theWarOfTheWorlds.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="sciFiQ\q1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q1yes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q2maybe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q2maybenear.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q2no.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q2nono.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q2nonogood.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q2nononone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q2nonononecomfort.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q2nonoread.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q2noyes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q2yes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q2yesno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q2yesyes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q3no.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q4no.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q4nono.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sciFiQ\q4yes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="alternativeBooks\Images\1984.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="alternativeBooks\Images\aClockworkOrange.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="alternativeBooks\Images\animalFarm.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="alternativeBooks\Images\braveNewWorld.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="alternativeBooks\Images\catsCradle.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="alternativeBooks\Images\fahrenheit451.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="alternativeBooks\Images\flowersForAlgernon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="alternativeBooks\Images\theHandmaidsTale.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="alternativeBooks\Images\theOutlandersSeries.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="alternativeBooks\Images\theRoad.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="alternativeBooks\Images\theStand.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="alternativeBooks\Images\slaughterhouseFive.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="alternativeBooks\Images\theTimeTravelersWife.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bothSf+fBooks\Images\anathem.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bothSf+fBooks\Images\perdidoStreetStation.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bothSf+fBooks\Images\theBookOfTheNewSun.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bothSf+fBooks\Images\theEyreAffair.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bothSf+fBooks\Images\theHyperionOmnibus.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\americanGods.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\aSongOfIceAndFire.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\dragonflight.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\goingPostal.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\jonathanStrangeMrNorrell.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\lordOfTheRings.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\mistborn.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\neverwhere.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\smallGods.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\somethingWickedThisWayComes.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\stardust.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theBelgariad.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theChroniclesOfAmber.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theChroniclesOfThomasCovenantTheUnbeliever.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theCodexAleraSeries.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theCrystalCave.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theDarkTowerSeries.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theElricSaga.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theKushielsLegacySeries.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theLastUnicorn.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theLegendOfDrizzt.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theMalazanBookOfTheFallenSeries.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theMistsOfAvalon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theNameOfTheWind.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theOnceAndFutureKing.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\thePrincessBride.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theRiftwarSaga.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theSilmarillion.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theSwordofShannaraTrilogy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theSwordOftruth.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theWayOfKings.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theWheelOfTime.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theXanthSeries.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\watershipDown.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\wicked.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="horrorBooks\Images\frankenstein.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="horrorBooks\Images\iAmLegend.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="horrorBooks\Images\sunshine.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="horrorBooks\Images\worldWarZ.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="infoCircle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="pictureBooks\Images\theSandmanSeries.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pictureBooks\Images\watchmen.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\20000LeaguesUnderTheSea.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\2001aSpaceOdyssey.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\aCanticleForLeibowitz.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\aFireUponTheDeep.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\childhoodsEnd.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\contact.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\cryptonomicon.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\doAndroidsDreamOfElectricSheep.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\doomsdayBook.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\dune.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\endersGame.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\iRobot.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\journeyToTheCenterOfTheEarth.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\lucifersHammer.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\neuromancer.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\oldMansWar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\rendezvousWithRama.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\ringworld.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\snowCrash.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\starshipTroopers.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\strangerInAStrangeLand.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theCavesOfSteel.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theCultureSeries.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theDiamondAge.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theDispossessed.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theForeverWar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theFoundationTrilogy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theIllustratedMan.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theLeftHandOfDarkness.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theMarsTrilogy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theMartianChronicles.JPG">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theMoonIsAHarshMistress.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theMoteInGodsEye.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theSpaceTrilogy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theThrawnTrilogy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theTimeMachine.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theUltimateHitchhikersGuideToTheGalaxy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theVorkosiganSaga.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sciFiBooks\Images\theWarOfTheWorlds.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="fantasyBooks\Images\conanTheBarbarianSeries.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fantasyBooks\Images\theFarseerTrilogy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

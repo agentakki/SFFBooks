@@ -1,0 +1,86 @@
+﻿<phone:PhoneApplicationPage 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+	x:Class="SFFGuide.perdidoStreetStation"
+	FontFamily="{StaticResource PhoneFontFamilyNormal}"
+	FontSize="{StaticResource PhoneFontSizeNormal}"
+	Foreground="{StaticResource PhoneForegroundBrush}"
+	Orientation="Portrait"
+	shell:SystemTray.IsVisible="True">
+
+	<!--LayoutRoot is the root grid where all page content is placed-->
+	<Grid x:Name="LayoutRoot" Background="Transparent">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		
+		<!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="GUIDE TO SCIENCE FICTION &amp; FANTASY BOOKS" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="both sf+f" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.476*"/>
+                <ColumnDefinition Width="0.524*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="summaryTitleTextBlock" 
+                       Margin="7,-19,0,0"
+                       TextWrapping="Wrap" 
+                       Text="Summary: " 
+                       VerticalAlignment="Top"
+                       RenderTransformOrigin="0.55,1.555" Grid.Column="1" 
+                       FontWeight="Bold"
+                       Height="27" 
+                       HorizontalAlignment="Left"
+                       Width="102"/>
+
+            <ScrollViewer Margin="0,8,0,12" Grid.Column="1" HorizontalAlignment="Right" Width="244">
+                <TextBlock x:Name="summaryTextBlock"
+                           TextWrapping="Wrap"
+                            
+                           Width="220"><Run Text="Beneath the towering bleached ribs of a dead, ancient beast lies New Crobuzon, a squalid city where humans, Re-mades, and arcane races live in perpetual fear of Parliament and its brutal militia. The air and rivers are thick with factory pollutants and the strange effluents of alchemy, and the ghettos contain a vast mix of workers, artists, spies, junkies, and whores. In New Crobuzon, the unsavory deal is stranger to none—not even to Isaac, a brilliant scientist with a penchant for Crisis Theory. "/><LineBreak/><Run/><LineBreak/><Run Text="Isaac has spent a lifetime quietly carrying out his unique research. But when a half-bird, half-human creature known as the Garuda comes to him from afar, Isaac is faced with challenges he has never before fathomed. Though the Garuda's request is scientifically daunting, Isaac is sparked by his own curiosity and an uncanny reverence for this curious stranger. "/><LineBreak/><Run/><LineBreak/><Run Text="While Isaac's experiments for the Garuda turn into an obsession, one of his lab specimens demands attention: a brilliantly colored caterpillar that feeds on nothing but a hallucinatory drug and grows larger—and more consuming—by the day. What finally emerges from the silken cocoon will permeate every fiber of New Crobuzon—and not even the Ambassador of Hell will challenge the malignant terror it invokes . . . "/><LineBreak/><Run/><LineBreak/><Run Text="A magnificent fantasy rife with scientific splendor, magical intrigue, and wonderfully realized characters, told in a storytelling style in which Charles Dickens meets Neal Stephenson, Perdido Street Station offers an eerie, voluptuously crafted world that will plumb the depths of every reader's imagination."/></TextBlock>
+            </ScrollViewer>
+
+            <Image Height="302" 
+                   Source="/bothSf+fBooks/Images/perdidoStreetStation.jpg" 
+                   HorizontalAlignment="Left" 
+                   Margin="12,-19,0,0" 
+                   x:Name="image1" 
+                   Stretch="Fill" 
+                   VerticalAlignment="Top" 
+                   Width="200" />
+
+            <TextBlock x:Name="titleTextBlock" 
+                       Margin="8,0,9,221" 
+                       TextWrapping="Wrap" 
+                       Height="95"
+                       VerticalAlignment="Bottom"><Run FontSize="32" Text="Perdido Street Station"/></TextBlock>
+
+            <TextBlock Margin="6,0,7,167" 
+                       TextWrapping="Wrap" 
+                       Text="by China Mieville" 
+                       VerticalAlignment="Bottom" 
+                       Height="50"
+                       FontSize="18.667" 
+                       x:Name="authorTextBlock" />
+
+            <Button x:Name="startOverButton" 
+                    Content="Start Over" 
+                    Margin="0,0,5,12" 
+                    VerticalAlignment="Bottom" Click="startOverButton_Click">
+
+
+            </Button>
+        </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>

@@ -1,0 +1,88 @@
+﻿<phone:PhoneApplicationPage 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:ic="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+	mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+	x:Class="SFFGuide.aSongOfIceAndFire"
+	FontFamily="{StaticResource PhoneFontFamilyNormal}"
+	FontSize="{StaticResource PhoneFontSizeNormal}"
+	Foreground="{StaticResource PhoneForegroundBrush}"
+	Orientation="Portrait"
+	shell:SystemTray.IsVisible="True">
+
+	<!--LayoutRoot is the root grid where all page content is placed-->
+	<Grid x:Name="LayoutRoot" Background="Transparent">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		
+		     <!--TitlePanel contains the name of the application and page 
+
+title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="GUIDE TO SCIENCE FICTION &amp; FANTASY BOOKS" Style="{StaticResource PhoneTextNormalStyle}"/>
+        	<TextBlock x:Name="PageTitle" Text="your book" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.476*"/>
+                <ColumnDefinition Width="0.524*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="summaryTitleTextBlock" 
+                       Margin="7,-19,0,0"
+                       TextWrapping="Wrap" 
+                       Text="Summary: " 
+                       VerticalAlignment="Top"
+                       RenderTransformOrigin="0.55,1.555" Grid.Column="1" 
+                       FontWeight="Bold"
+                       Height="27" 
+                       HorizontalAlignment="Left"
+                       Width="102"/>
+
+            <ScrollViewer Margin="0,8,0,12" Grid.Column="1" 
+
+HorizontalAlignment="Right" Width="244">
+                <TextBlock x:Name="summaryTextBlock"
+                           TextWrapping="Wrap"
+                            
+                           Width="220"><Run Text="Long ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister and supernatural forces are massing beyond the kingdom’s protective Wall. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the land they were born to. Sweeping from a land of brutal cold to a distant summertime kingdom of epicurean plenty, here is a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens."/><LineBreak/><Run/><LineBreak/><Run Text="Here an enigmatic band of warriors bear swords of no human metal; a tribe of fierce wildlings carry men off into madness; a cruel young dragon prince barters his sister to win back his throne; and a determined woman undertakes the most treacherous of journeys. Amid plots and counterplots, tragedy and betrayal, victory and terror, the fate of the Starks, their allies, and their enemies hangs perilously in the balance, as each endeavors to win that deadliest of conflicts: the game of thrones."/><LineBreak/><Run/><LineBreak/><Run Text="As a whole, this series comprises a genuine masterpiece of modern fantasy, bringing together the best the genre has to offer. Magic, mystery, intrigue, romance, and adventure fill these pages and transport us to a world unlike any we have ever experienced. Already hailed as a classic, George R. R. Martin’s stunning series is destined to stand as one of the great achievements of imaginative fiction."/></TextBlock>
+            </ScrollViewer>
+
+        	<Image Height="302" 
+        		Source="/fantasyBooks/Images/aSongOfIceAndFire.jpg" 
+        		HorizontalAlignment="Left" 
+        		Margin="12,-19,0,0" 
+        		x:Name="image1" 
+        		Stretch="Fill" 
+        		VerticalAlignment="Top" 
+        		Width="200" />
+
+        	<TextBlock x:Name="titleTextBlock" 
+        		Margin="8,0,9,247" 
+        		TextWrapping="Wrap"                        
+        		VerticalAlignment="Bottom" Height="88" FontSize="32"><Run Text="A Song Of Ice And Fire"/><Run Text=" "/><LineBreak/></TextBlock>
+
+        	<TextBlock Margin="8,0,5,218" 
+        		TextWrapping="Wrap" 
+        		Text="by George R.R. Martin" 
+        		VerticalAlignment="Bottom"                      
+        		FontSize="18.667" 
+        		x:Name="authorTextBlock" />
+
+            <Button x:Name="startOverButton" 
+                    Content="Start Over" 
+                    Margin="0,0,5,12" 
+                    VerticalAlignment="Bottom" Click="startOverButton_Click">              
+
+            </Button>
+        </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>
